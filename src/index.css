@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.calculator-button {
+  @apply w-full h-16 rounded-full flex items-center justify-center text-xl font-bold transition-all duration-300;
+}
+
+.calculator-button:hover {
+  @apply transform scale-105;
+}
+
+.calculator-display {
+  @apply mb-4 p-4 rounded-2xl text-right text-4xl font-bold;
+}
